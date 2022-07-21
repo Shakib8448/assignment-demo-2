@@ -1,5 +1,17 @@
-/* fonts  */
+/*================
+ fonts  
+ ================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/* ================
+keyframe  
+==============*/
+@keyframes anim{
+    from{
+
+    }
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -14,12 +26,16 @@ main{
 .container{
     margin-top: 70px;
 }
-/* top header style  */
+
+
+/* =================================
+top header style
+===================================  */
 .top-header{
     display: flex;
     background-color: #161616;
     width: 1100px;
-    height: 400px;
+    height: 500px;
     justify-content: center;
     border-radius: 30px;
     padding-top: 33px;
@@ -27,16 +43,16 @@ main{
     padding-right: 40px;
 }
 .header-img img{
-    width: 350px;
-    height: 400px;    
+    width: 450px;
+    height: 500px;    
 }
 
 .header-info{
-    width: 400px;
-height: 324px;
-left: 246px;
-top: 100px;
-margin: 0;
+    width: 400pxfi;
+    height: 324px;
+    left: 246px;
+    top: 100px;
+    margin: 0;
 }
 
 .header-info h1{
@@ -58,9 +74,13 @@ margin: 0;
     padding: 10px 12px;
     border-radius: 5px;
     color: #FFFFFF;
+    animation: anim 2s ease-in 0.1 infinite none none;
+    animation-play-state: running;
 }
 
-/* blog section style  */
+/*=======================
+ blog section style  
+ =========================*/
 .side-menu{
     display: grid;
     grid-template-columns: repeat(1,1rf);
@@ -84,6 +104,8 @@ margin: 0;
 .info-button.select{
     background-color: red;
     color: #FFFFFF;
+    animation: anim 2s ease-in 0.1 infinite none none;
+    animation-play-state: running;
 }
 .container-2{
     display: grid;
@@ -112,4 +134,119 @@ margin: 0;
 }
 .blog-icon span{
     margin-right:  20px;
+}
+
+.upcomming-game{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.game-info{
+    border: 1px solid rgb(224, 224, 223);
+    padding: 12px;
+    
+}
+
+.flag{
+    display: flex;   
+}
+.game-time{
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* ==================
+view all burtton 
+===================*/
+.view-all-button a{
+    position: absolute;
+    left: 650px;
+    top: 1900px;
+    background-color: rgb(238, 40, 5);
+    color: white;
+    padding: 30px 50px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid khaki;
+    display: none;
+}
+
+
+/* //////////////////==
+footer styles
+/////////// //////// ==*/
+.footer{
+    position: absolute;
+    width: 96.4%;
+    height: 250px;
+    top: 2050px;
+    background-color: #161616;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 90px 20px;
+}
+.footer-item{
+    display: grid;
+    grid-template-columns: repeat(6,.2fr);
+}
+
+hr{
+   width: 90%; 
+}
+
+/* ==================
+    Media Quarry  
+======================*/
+/* =======mobile device  */
+@media only screen and (max-width:600px) {
+    .blog{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .upcomming-game{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .container-2{
+        display: block;
+    }
+    .side-menu{
+        margin-bottom: 50px;
+        display: flex;
+        background-color: white;
+        width: 70%;
+        margin: 10px 20px;
+    }
+    .footer-item{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* ========Tablet device  */
+@media only screen and (max-width:1200px) {
+    .blog{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    .upcomming-game{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .side-menu{
+        margin-bottom: 50px;
+        display: flex;
+        background-color: white;
+        width: 90%;
+        margin: 10px 20px;
+    }
+    .view-all-button a{
+        display: flex;
+    } 
+    .footer-item{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
