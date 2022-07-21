@@ -1,0 +1,115 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin-top: 70px;
+}
+/* top header style  */
+.top-header{
+    display: flex;
+    background-color: #161616;
+    width: 1100px;
+    height: 400px;
+    justify-content: center;
+    border-radius: 30px;
+    padding-top: 33px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.header-img img{
+    width: 350px;
+    height: 400px;    
+}
+
+.header-info{
+    width: 400px;
+height: 324px;
+left: 246px;
+top: 100px;
+margin: 0;
+}
+
+.header-info h1{
+    width: 331px;
+    left: 206px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.header-info p{
+    color: #FFFFFF;
+    margin:30px 0px;
+}
+.header-info a{
+    background-color: rgb(221, 62, 33);
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/* blog section style  */
+.side-menu{
+    display: grid;
+    grid-template-columns: repeat(1,1rf);
+    height: 200px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 50px;
+}
+.info-button{
+   background-color: #FFFFFF;
+   color: black;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 10px;
+   width: 30px;
+   height: 20px;
+}
+
+.info-button.select{
+    background-color: red;
+    color: #FFFFFF;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    margin-top: 80px;
+    width: 1000px;
+    height: 400px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+    column-gap: 15px;
+    margin-left: 20px;
+}
+.blog-item{
+    border: 1.5px solid #d1cfcf;
+    border-radius: 10px;
+}
+
+.blog-info{
+    padding: 10px;
+}
+.blog-icon span{
+    margin-right:  20px;
+}
